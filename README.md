@@ -139,7 +139,6 @@ SLACK_SERVER=your-slack-server
 Replace the placeholders with the actual values for your project.
 
 The `config.py` file in the project reads these environment variables and makes them available for use in the project. If any of these variables are not set, the application will not run correctly.
-```
 
 Remember to replace the placeholders with the actual environment variables your project uses.
 
