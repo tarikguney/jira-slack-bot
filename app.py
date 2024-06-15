@@ -28,12 +28,5 @@ def slack_events():
     response.headers['x-slack-no-retry'] = '1'
     return response
 
-
-@app.route("/oncall/remind", methods=['GET'])
-def remind_oncall():
-    slack_handler.remind_oncall()
-    return jsonify({'status': 'ok'})
-
-
 if __name__ == '__main__':
     app.run(port=8080)
