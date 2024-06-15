@@ -1,8 +1,8 @@
-# Jira Slack Bot
+# 🤖 Jira Slack Bot
 
 This project is a Slack bot that integrates with Jira to manage tasks, bugs, stories, and epics. It allows users to create and manage tickets directly from Slack.
 
-## Sample Slack Conversation
+## 💬 Sample Slack Conversation
 
 > The following is an example of a conversation between two users in Slack using the bot and how they can create a bug ticket:
 
@@ -18,7 +18,7 @@ This project is a Slack bot that integrates with Jira to manage tasks, bugs, sto
 
 **SlackBot**: Bug ticket created with title "Login functionality failing with valid credentials". You can view the ticket [here](https://jira.example.com/browse/BUG-1234).
 
-## Features
+## 🚀 Features
 
 The bot supports the following commands:
 
@@ -31,16 +31,16 @@ The bot supports the following commands:
 7. `!time <ticket_id>` - Get the elapsed time for each state transition for a ticket.
 8. `!help` - Get the list of commands you can use with me.
 
-## Getting Started
+## 🏁 Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### 📋 Prerequisites
 
 - Python
 - pip
 
-### Installing
+### 🔧 Installing
 
 1. Clone the repository
 2. Install the dependencies with pip:
@@ -55,16 +55,16 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## Built With
+## 🛠️ Built With
 
 - Python
 - Flask
 - slack_sdk
 - Jira SDK
 
-## Integrating with Slack
+## 🤝 Integrating with Slack
 
-### Creating a Slack Bot
+### 🤖 Creating a Slack Bot
 
 To create a Slack bot, follow these steps:
 
@@ -74,7 +74,7 @@ To create a Slack bot, follow these steps:
 4. Install the app to your workspace. Go to the 'Install App' feature in the sidebar, and click on 'Install App to Workspace'. You will be redirected to your workspace's authorization page.
 5. Authorize the app. Once authorized, you will be redirected back to the 'Install App' page, where you will find the 'Bot User OAuth Access Token'. This token is used to authenticate the bot in your code.
 
-### Setting Up Event Subscriptions
+### 📡 Setting Up Event Subscriptions
 
 To use event subscriptions with this Slack bot, you need to configure your Slack app to send specific events to your bot's server. Here's how you can do it:
 
@@ -91,7 +91,7 @@ Now, whenever a message is posted in a channel that the bot is a member of, Slac
 
 Remember to reinstall your app in your workspace after making these changes for them to take effect. You can do this from the 'Install App' page in your app's configuration.
 
-### Authorization Scopes
+### 🔑 Authorization Scopes
 
 For the Slack bot to read messages in public and private channels and write messages, you need to add the following OAuth scopes to your Slack app:
 
@@ -110,7 +110,7 @@ To add these scopes, follow these steps:
 
 Remember to reinstall your app in your workspace after making these changes for them to take effect. You can do this from the 'Install App' page in your app's configuration.
 
-## Project Structure
+## 📚 Project Structure
 
 - `app.py`: This is the main entry point of the application. It initializes the Flask application and starts the server.
 
@@ -122,6 +122,6 @@ Remember to reinstall your app in your workspace after making these changes for 
 
 - `requirements.txt`: This file lists the Python dependencies that need to be installed for the project to run.
 
-## Contributing
+## 🤝 Contributing
 
 Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
