@@ -1,0 +1,28 @@
+{
+    "client_msg_id": "3b64c9e4-bcbd-42ce-82ec-e33aac74a4a8",
+    "type": "message",
+    "text": "Testing. Please ignore.",
+    "user": "U059UD27KDE",
+    "ts": "1704761977.335969",
+    "blocks": [
+        {
+            "type": "rich_text",
+            "block_id": "wAgoE",
+            "elements": [
+                {
+                    "type": "rich_text_section",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "text": "Testing. Please ignore."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "team": "T0296ASB",
+    "channel": "C03SSJMEPVDF",
+    "event_ts": "1704761977.335934",
+    "channel_type": "channel"
+}

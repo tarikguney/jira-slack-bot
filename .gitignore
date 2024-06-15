@@ -1,0 +1,8 @@
+# PyCharm specific
+.idea/
+*.iml
+*.iws
+
+# Ignore IntelliJ IDEA project files
+*.ipr
+.DS_Store
