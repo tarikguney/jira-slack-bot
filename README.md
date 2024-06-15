@@ -2,6 +2,22 @@
 
 This project is a Slack bot that integrates with Jira to manage tasks, bugs, stories, and epics. It allows users to create and manage tickets directly from Slack.
 
+## Sample Slack Conversation
+
+> The following is an example of a conversation between two users in Slack using the bot and how they can create a bug ticket:
+
+**John**: Hey Jane, I've noticed an issue with the login functionality. It seems to be failing when I try to login with my credentials.
+
+**Jane**: That's strange, John. I just tested it and it seems to be working fine for me. Can you provide more details about the issue?
+
+**John**: Sure, I'm getting a "Invalid Credentials" error even though I'm entering the correct username and password.
+
+**Jane**: That's definitely not expected. Let's create a bug for this. 
+
+**Jane**: `!bug Login functionality failing with valid credentials`
+
+**SlackBot**: Bug ticket created with title "Login functionality failing with valid credentials". You can view the ticket [here](https://jira.example.com/browse/BUG-1234).
+
 ## Features
 
 The bot supports the following commands:
