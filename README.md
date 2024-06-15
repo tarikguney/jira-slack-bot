@@ -46,6 +46,16 @@ python app.py
 - slack_sdk
 - Jira SDK
 
+## Project Structure
+
+- `app.py`: This is the main entry point of the application. It initializes the Flask application and starts the server.  
+
+- `slack_message_handler.py`: This file contains the logic for handling incoming Slack messages and responding to them. It includes functions for each command that the bot supports (!bug, !story, !task, !epic, !priority, !inprogress, !time, !help).  
+
+- `jira_helper.py`: This file contains helper functions for interacting with the Jira API. It includes functions for creating tickets, getting the elapsed time for each state transition of a ticket, and getting the story size and priority of a ticket.  
+
+- `requirements.txt`: This file lists the Python dependencies that need to be installed for the project to run.
+
 ## Contributing
 
 Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
