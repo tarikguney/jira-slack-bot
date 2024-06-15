@@ -122,6 +122,27 @@ Remember to reinstall your app in your workspace after making these changes for 
 
 - `requirements.txt`: This file lists the Python dependencies that need to be installed for the project to run.
 
+## ⚙️ Configuration
+
+This project uses a `.env` file for configuration. This file should be located at the root of the project and should not be checked into version control. It is used to store sensitive information such as API keys, database credentials, and other environment-specific settings.
+
+Here's a sample `.env` file:
+
+```bash
+SLACK_BOT_TOKEN=your-slack-bot-token
+JIRA_USER_EMAIL=your-jira-user_email
+JIRA_API_TOKEN=your-jira-api-token
+JIRA_API_SERVER=your-jira-base-url
+JIRA_PROJECT_KEY=your-jira-project-key
+SLACK_SERVER=your-slack-server
+```
+Replace the placeholders with the actual values for your project.
+
+The `config.py` file in the project reads these environment variables and makes them available for use in the project. If any of these variables are not set, the application will not run correctly.
+```
+
+Remember to replace the placeholders with the actual environment variables your project uses.
+
 ## 🤝 Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
