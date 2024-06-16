@@ -110,6 +110,24 @@ To add these scopes, follow these steps:
 
 Remember to reinstall your app in your workspace after making these changes for them to take effect. You can do this from the 'Install App' page in your app's configuration.
 
+### 🌐 Using NGROK for Local Development
+
+When developing locally, you need a way to expose your local server to the internet so that Slack can send event data to it. [NGROK](https://ngrok.com/) is a tool that can create a secure tunnel to your localhost, making it accessible over the internet.
+
+Here's how you can use NGROK for local development:
+
+1. Download and install NGROK from the [official website](https://ngrok.com/download).
+2. Once installed, open a new terminal window and start NGROK on the same port as your local server by running the following command:
+
+```bash
+ngrok http 5000
+```
+Replace 5000 with the port number your local server is running on.  
+
+NGROK will start and display a public URL (for example, http://12345678.ngrok.io). You can use this URL as the Request URL in your Slack app's event subscription settings.
+
+Remember to update the Request URL in your Slack app's settings every time you restart NGROK, as a new public URL is generated each time.  With NGROK running, you can now receive events from Slack on your local development server.
+
 ## 📚 Project Structure
 
 - `app.py`: This is the main entry point of the application. It initializes the Flask application and starts the server.
